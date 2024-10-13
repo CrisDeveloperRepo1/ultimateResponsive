@@ -135,11 +135,11 @@ h2 {
 @media(max-width:991px){
 
 
- .header {
-        background-size: contain; /* Asegúrate de que la imagen se ajuste bien */
-        background-position: top; /* Cambia la posición si es necesario */
-        min-height: 50vh; /* Ajusta la altura si deseas */
-    }
+  .header {
+      background-size: contain; /* Asegúrate de que la imagen se ajuste bien */
+      background-position: top; /* Cambia la posición si es necesario */
+      min-height: 50vh; /* Ajusta la altura si deseas */
+  }
   .header-content {
     padding: 100px 30px;
   }
@@ -165,8 +165,3 @@ h2 {
     display: none;
   }
 }
-
-
-
-
-/* Esto es el logo */
