@@ -132,7 +132,7 @@ h2 {
     font-size: 18px; /* Aumenta el tamaño del texto */
 }
 
-@media(max-width:991px){
+@media(max-width:768px){
 
 
   .header {
@@ -164,4 +164,11 @@ h2 {
   .museo-img {
     display: none;
   }
+}
+@media (orientation: landscape) {
+    .header {
+        background-size: contain; /* Ajusta para mejor visibilidad en horizontal */
+        background-position: top; /* Cambia la posición si es necesario */
+        min-height: 40vh; /* Ajusta la altura para pantallas anchas */
+    }
 }
