@@ -10,7 +10,7 @@ function toggleText() {
     setTimeout(() => {
         textElement.style.opacity = '0';
         textElement.style.transform = 'rotateX(0)';
-    }, 4000); // Muestra el texto por 1 segundo
+    }, 9000); // Muestra el texto por 1 segundo
 }
 
 // Llama a la función cada 3 segundos
