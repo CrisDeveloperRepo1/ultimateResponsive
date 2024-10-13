@@ -10,11 +10,11 @@ function toggleText() {
     setTimeout(() => {
         textElement.style.opacity = '0';
         textElement.style.transform = 'rotateX(0)';
-    }, 19000); // Muestra el texto por 1 segundo
+    }, 9000); // Muestra el texto por 1 segundo
 }
 
 // Llama a la función cada 3 segundos
-setInterval(toggleText, 2000); // Tiempo total entre apariciones
+setInterval(toggleText, 5000); // Tiempo total entre apariciones
 
 // Mostrar contenido de Introducción con efecto
 setTimeout(() => {
