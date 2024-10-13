@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+
+}
+body {
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    padding: 10px; /* Ajusta el padding según lo necesites */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/fondo2.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu {
+    display: flex; /* Usa flexbox para alinear logo y texto giratorio */
+    align-items: center; /* Centra verticalmente los elementos */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* funciona */
+
+}
+
+.logo {
+    position: relative; /* Mantiene el logo en flujo con el texto */
+    color:#FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.logo img {
+    max-width: 50%; /* Ajusta el ancho máximo del logo a la mitad de su tamaño original */
+    height: auto; /* Mantiene la proporción */
+}
+
+.text {
+    margin-left: 0; /* Elimina el margen para acercar más al logo */
+    position: relative; /* Permite el uso de top */
+    top: -10px; /* Mantiene el ajuste vertical */
+    opacity: 0; /* Comienza oculto */
+    transform: rotateX(0); /* Comienza sin rotación */
+    transition: opacity 0.5s, transform 0.5s; /* Transiciones suaves */
+    transform-origin: center; /* Establece el origen de la rotación */
+}
+
+.header-content {
+    margin-top: 80px; /* Ajusta el margen superior para separar el contenido del encabezado */
+    padding: 10px; /* Opcional: añade padding para mayor espacio interno */
+    opacity: 0; /* Comienza oculto */
+    transform: scale(0); /* Comienza desde un tamaño pequeño */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+    transform-origin: center; /* Establece el origen de la transformación */
+}
+
+/* Clases para mostrar el contenido */
+.show {
+    opacity: 1; /* Hace visible el contenido */
+    transform: scale(1); /* Escala al tamaño normal */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content h1 {
+
+  font-size: 75px;
+  line-height: 80px;
+  color: #F9FAFC;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.header-content p{
+  font-size: 16px;
+  color:#C5C5C5;
+  /*padding: 0 250PX;*/
+  margin-bottom: 25px;
+}
+/* hasta aca funciona  */
+
+.museo-1 img{
+  width: 200px;
+
+}
+.museo-img{
+
+}
+
+#sustainable-text {
+    color: #C5C5C5; /* Cambia el color a blanco */
+
+}
+
+
+h2 {
+    color: #b2c22c; /* Verde específico */
+    font-size: 36px
+}
+
+
+.footer {
+    text-align: center; /* Centra el contenido */
+    padding: 20px; /* Opcional: añade padding para más espacio */
+}
+
+.footer a {
+    color: #b2c22c; /* Cambia el color del enlace a verde */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 18px; /* Aumenta el tamaño del texto */
+}
+
+@media(max-width:991px){
+
+
+  .header {
+    min-height: 0vh;
+  }
+  .header-content {
+    padding: 100px 30px;
+  }
+  .header-content p {
+    padding: 0;
+  }
+  /* hasta aqui bien */
+
+  .museo{
+    padding: 30px;
+
+  }
+  .museo-content h2{
+
+    padding:0;
+  }
+  /*no agregue el .txt-p*/
+  .museo-group{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .museo-img {
+    display: none;
+  }
+}
+
+
+
+
+/* Esto es el logo */
