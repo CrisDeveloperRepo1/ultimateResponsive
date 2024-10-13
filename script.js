@@ -14,7 +14,7 @@ function toggleText() {
 }
 
 // Llama a la función cada 3 segundos
-setInterval(toggleText, 2000); // Tiempo total entre apariciones
+setInterval(toggleText, 5000); // Tiempo total entre apariciones
 
 // Mostrar contenido de Introducción con efecto
 setTimeout(() => {
